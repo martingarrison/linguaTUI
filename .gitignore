@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.venv/
+
+# Runtime
+.linguaclaw/
+
+# Cloned dependency repos (not part of this project)
+Linguaclaw/
+pi-web-access/
+
+# Local scratch / editor
+clipboard.md
+*.swp
+*.swo
+*~
+.DS_Store

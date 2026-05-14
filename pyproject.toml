@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linguaTUI"
+version = "0.3.0"
+description = "A Textual TUI for linguaclaw — a thin agent harness runtime."
+requires-python = ">=3.10"
+dependencies = [
+    "textual>=8.0.0",
+    "litellm>=1.0.0",
+]
+
+[project.scripts]
+linguaTUI = "linguaTUI.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "linguaclaw",  # required at runtime
+]
+
+[tool.setuptools.packages.find]
+include = ["linguaTUI", "linguaTUI.*"]

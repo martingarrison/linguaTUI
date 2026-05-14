@@ -1,0 +1,74 @@
+/*
+ * linguaTUI stylesheet
+ */
+
+Screen {
+    background: $surface;
+}
+
+Header {
+    background: $primary;
+    color: $text;
+}
+
+Footer {
+    background: $panel;
+    color: $text-muted;
+}
+
+#main-container {
+    layout: horizontal;
+    height: 1fr;
+    width: 100%;
+}
+
+#conversation-pane-container {
+    width: 70%;
+    height: 100%;
+    border-right: solid $border;
+}
+
+#details-pane-container {
+    width: 30%;
+    height: 100%;
+    padding: 1;
+}
+
+#conversation-pane {
+    height: 100%;
+    width: 100%;
+    background: $surface;
+    padding: 0 1;
+}
+
+#details-sidebar {
+    height: 100%;
+    width: 100%;
+    background: $panel;
+    padding: 0 1;
+}
+
+.details-section {
+    margin-bottom: 1;
+    padding: 0 0;
+}
+
+#prompt-input {
+    dock: bottom;
+    margin: 0 1 1 1;
+    padding: 0 2;
+    min-height: 3;
+    border: solid $secondary;
+    background: $surface;
+    color: $text;
+}
+
+#prompt-input:focus {
+    border: solid $accent;
+}
+
+#prompt-input:disabled {
+    background: $surface;
+    color: $text-muted;
+    border: dashed $border;
+}
